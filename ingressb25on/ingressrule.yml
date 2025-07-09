@@ -1,4 +1,3 @@
-
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -32,5 +31,5 @@ spec:
               service: 
                 name: mobilesrv
                 port:
-                  number: 8080
+                  number: 80
   
