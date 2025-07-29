@@ -5,7 +5,7 @@ pipeline {
         stage('pull'){
             steps{
                 echo "we are pulling the source code from git repository"
-                git 'https://github.com/harshalipatil14/deleteafterpractice.git'
+                git credentialsId: '1', url: 'https://github.com/harshalipatil14/deleteafterpractice.git'
             }
         }
         stage('Build') {
